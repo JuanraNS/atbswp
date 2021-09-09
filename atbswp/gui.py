@@ -31,11 +31,12 @@ import settings
 import wx
 import wx.adv
 
+_ = wx.GetTranslation
 
 class MainDialog(wx.Dialog, wx.MiniFrame):
     """Main Window, a dialog to display the app correctly even on tiling WMs."""
 
-    app_text = ["Load Capture", "Save", "Start/Stop Capture", "Play", "Compile to executable",
+    app_text = [_("Load Capture"), _("Save"), "Start/Stop Capture", "Play", "Compile to executable",
                 "Preferences", "Help"]
     settings_text = ["Play &Speed: Fast", "&Infinite Playback", "Set &Repeat Count", "Recording &Hotkey",
                      "&Playback Hotkey", "Always on &Top", "&Language", "&About", "&Exit"]

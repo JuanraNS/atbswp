@@ -39,6 +39,7 @@ import wx
 import wx.adv
 import wx.lib.newevent as NE
 
+_ = wx.GetTranslation
 
 TMP_PATH = os.path.join(tempfile.gettempdir(),
                         "atbswp-" + date.today().strftime("%Y%m%d"))
